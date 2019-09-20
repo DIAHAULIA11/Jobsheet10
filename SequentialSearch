@@ -1,0 +1,302 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sequentialsearch;
+import java.util.Scanner;
+/**
+ *
+ * @author diaha
+ */
+public class LatihanPraktikum01 {
+    public static void main(String[] args) {
+        String cari;
+        boolean found = false;
+        String [] data = new String []{"29", "4", "10", "94", "96"};
+        Scanner input = new Scanner (System.in);
+        System.out.println("Masukkan data yang ingin dicari");
+        cari = input.nextLine();
+        for (int i = 0; i < data.length; i++){
+            if (cari.equals(data[i])){
+                found = true;
+                break;
+            }
+        }if (found == true){
+            System.out.println("Data terdeteksi");
+        }else{
+            System.out.println("Sorry, you can try again:(");
+        }
+        
+        
+    }
+}
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sequentialsearch;
+import java.util.Scanner;
+/**
+ *
+ * @author diaha
+ */
+public class LatihanPraktikum02 {
+    public static void main(String[] args) {
+        String cari;
+        boolean found = false;
+        String[]data = new String []{"8","90","56","90","87","76","42"};
+        Scanner input = new Scanner (System.in);
+        System.out.println("Masukkan data yang ingin dicari");
+        cari = input.nextLine();
+        for (int i = 0; i < data.length; i++) {
+            if (cari.equals (data[i])){
+                found = true;
+                break;
+            }
+                    
+        }if (found == true){
+            System.out.println("Data terdeteksi");
+        }else{
+            System.out.println("Sorry, you can try again:(");
+        }
+        
+        
+    }
+}
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sequentialsearch;
+
+/**
+ *
+ * @author diaha
+ */
+public class LatihanPraktikum03 {
+    public static void main(String[] args) {
+        int max = 0;
+        int min = 0;
+        int [] data = new int []{-21,90,82,190,-83,74};
+        System.out.println("Data Array :");
+        for (int i = 0; i < data.length; i++) {
+            if(data[i] < min){
+                min= data[i];
+            }
+            if(data [i] > max){
+                max = data[i];
+            }
+        }
+        System.out.println("\n Data terbesar dari data array adalah "+ max);
+        System.out.println("\n Data terkecil dari data array adalah "+ min);
+    }
+}
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sequentialsearch;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author diaha
+ */
+public class LatihanPraktikum04 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String cari;
+        System.out.println("Masukkan sebuah kata/kalimat: ");
+        cari = input.nextLine();
+
+        int a = 0;
+        for (int i = 0; i < cari.length(); i++) {
+            if (cari.charAt(i) == 'a') {
+                a++;
+            }
+        }
+        System.out.println("Jumalah huruf a ada" + a);
+    }
+}
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sequentialsearch;
+import java.util.Scanner;
+
+/**
+ *
+ * @author diaha
+ */
+public class Praktikum1 {
+
+    public static void main(String[] args) {
+      int cari;
+      int data [] = new int []{ 74, 98, 72, 74, 72, 90, 81, 72};
+      boolean found = false;
+      Scanner masukan = new Scanner (System.in);
+        System.out.println("Data pada array : ");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+        }
+        System.out.print("\n Masukkan nilai yang dicari: ");
+        cari = masukan.nextInt();
+        int a= 0;
+        for (int i = 0; i < data.length; i++) {
+            if (cari == data[i]){
+                found = true;
+                a++;
+            }
+        }if (found == true){
+            System.out.println("\n Data yang dicari ditemukan sebanyak: " + a +" kali");
+        }else{
+            System.out.println("\n data tidak ditemukan");
+            
+        }
+        }
+    }
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sequentialsearch;
+
+/**
+ *
+ * @author diaha
+ */
+public class Praktikum2 {
+
+    public static void main(String[] args) {
+        int angka = 0;
+        int[] data = new int[]{ 83, 76, 45, 90, 85, 80, 78, 74 };
+        System.out.println("Data pada Array : ");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+
+        }
+        double rata = 0;
+        for (int a = 0; a < data.length; a++) {
+            rata += data[a];
+        }
+        rata /= data.length;
+        System.out.println("\nRata-Rata nilai Array : " + rata);
+        System.out.print("Nilai yang diatas rata-rata :");
+
+        for (int p = 0; p < data.length; p++) {
+            if (data[p] > rata) {
+                System.out.print(data[p] + "\t");
+            }
+
+        }
+        System.out.println("\n");
+    }
+}
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sequentialsearch;
+
+/**
+ *
+ * @author diaha
+ */
+public class Praktikum3 {
+
+    public static void main(String[] args) {
+        int angka = 0;
+        int[] data = new int[]{ 92, 98, 76, 72, 84, 101, 39};
+        System.out.print("Nilai pada Array : ");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+
+        }
+        System.out.print("\n");
+        System.out.println("Nilai yang merupakan kelipatan tiga :");
+        for (int a = 0; a < data.length; a++) {
+            if (data[a]%3 ==  0){
+                System.out.println(data[a] + " ");
+            }
+            
+            
+        }
+    }
+}
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sequentialsearch;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author diaha
+ */
+public class Praktikum4 {
+
+    public static void main(String[] args) {
+        Scanner kalimat = new Scanner(System.in);
+        int a, i, u, e, o;
+        a = 0;
+        i = 0;
+        u = 0;
+        e = 0;
+        o = 0;
+        String hr, kl = new String();
+
+        System.out.print("Masukkan Kalimat/kata :");
+        kl = kalimat.nextLine();
+        char ada[] = new char[kl.length()];
+        hr = kl.toLowerCase();
+        for (int x = 0; x < kl.length(); x++) {
+            if (hr.charAt(x) == 'a') {
+                a++;
+            }
+            if (hr.charAt(x) == 'i') {
+                i++;
+            }
+            if (hr.charAt(x) == 'u') {
+                u++;
+            }
+            if (hr.charAt(x) == 'e') {
+                e++;
+            }
+            if (hr.charAt(x) == 'o') {
+                o++;
+            }
+        }
+        System.out.println("Huruf vokal a = " + a);
+        System.out.println("Huruf vokal i = " + i);
+        System.out.println("Huruf vokal u = " + u);
+        System.out.println("Huruf vokal e = " + e);
+        System.out.println("Huruf vokal o = " + o);
+        System.out.println("Jumlah huruf vokal = " + (a + i + u + e + o));
+
+    }
+
+}
+
+
+
+

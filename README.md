@@ -1,0 +1,4 @@
+# Jobsheet10
+NAMA  : DIAH AULIA KUSUMA PUTRI
+KELAS : X RPL 1
+NO    : 11
